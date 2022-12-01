@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`[component] Layout > snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Hello World!
+    </h1>
+  </div>
+</DocumentFragment>
+`;
