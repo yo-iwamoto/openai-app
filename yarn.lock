@@ -24,6 +24,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@aspida/fetch@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "@aspida/fetch@npm:1.11.0"
+  dependencies:
+    aspida: ^1.7.1
+  checksum: 4ca1d8a8a760290f1379c9601f214198472b4ad14fb3c5293ecb0f2755c9ad3e9431c52bef492d918f740c7754961b7d1b9afef6336897a92cdebdf75f1c5fe9
+  languageName: node
+  linkType: hard
+
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.10.4":
   version: 7.16.7
   resolution: "@babel/code-frame@npm:7.16.7"
@@ -1229,6 +1238,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"aspida@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "aspida@npm:1.11.0"
+  dependencies:
+    "@types/minimist": ^1.2.2
+    chokidar: ^3.5.3
+    form-data: ^4.0.0
+    minimist: ^1.2.6
+  bin:
+    aspida: bin/index.js
+  checksum: 7661df6a89235abac4e8306f13bf3fc39c59dffda369bc0b1a46f444f7491f2fcf14f2bd580d6dd3ffe620d33ceef6e6d19ddf198875109c02750fa57e4ca4b9
+  languageName: node
+  linkType: hard
+
 "aspida@npm:^1.7.1":
   version: 1.9.0
   resolution: "aspida@npm:1.9.0"
@@ -1293,6 +1316,15 @@ __metadata:
   version: 4.4.1
   resolution: "axe-core@npm:4.4.1"
   checksum: ad14c5b71059dc3d24ef2519b8cd96e98b4a572379396201ce449d1c4262181821d6ca9550df65b22371faf06d28bbe94d391fe5675f2a08e6550f7b5da8416d
+  languageName: node
+  linkType: hard
+
+"axios@npm:^0.26.0":
+  version: 0.26.1
+  resolution: "axios@npm:0.26.1"
+  dependencies:
+    follow-redirects: ^1.14.8
+  checksum: d9eb58ff4bc0b36a04783fc9ff760e9245c829a5a1052ee7ca6013410d427036b1d10d04e7380c02f3508c5eaf3485b1ae67bd2adbfec3683704745c8d7a6e1a
   languageName: node
   linkType: hard
 
@@ -2685,7 +2717,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.15.0":
+"follow-redirects@npm:^1.14.8, follow-redirects@npm:^1.15.0":
   version: 1.15.2
   resolution: "follow-redirects@npm:1.15.2"
   peerDependenciesMeta:
@@ -3753,6 +3785,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimist@npm:^1.2.6":
+  version: 1.2.7
+  resolution: "minimist@npm:1.2.7"
+  checksum: 7346574a1038ca23c32e02252f603801f09384dd1d78b69a943a4e8c2c28730b80e96193882d3d3b22a063445f460e48316b29b8a25addca2d7e5e8f75478bec
+  languageName: node
+  linkType: hard
+
 "minipass-collect@npm:^1.0.2":
   version: 1.0.2
   resolution: "minipass-collect@npm:1.0.2"
@@ -4194,6 +4233,7 @@ __metadata:
   resolution: "openai-app@workspace:."
   dependencies:
     "@aspida/axios": ^1.11.0
+    "@aspida/fetch": ^1.11.0
     "@hookform/resolvers": ^2.9.10
     "@testing-library/react": ^13.4.0
     "@types/node": ^17.0.21
@@ -4203,6 +4243,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.14.0
     "@vitejs/plugin-react": ^2.2.0
     "@vitest/ui": ^0.24.3
+    aspida: ^1.11.0
     autoprefixer: ^10.4.2
     axios: ^1.1.3
     eslint: ^8.11.0
@@ -4215,6 +4256,7 @@ __metadata:
     lint-staged: ^12.4.1
     next: ^12.3.0
     npm-run-all: ^4.1.5
+    openai: ^3.1.0
     pathpida: ^0.18.0
     postcss: ^8.4.8
     prettier: ^2.5.1
@@ -4229,6 +4271,16 @@ __metadata:
     vitest: ^0.24.3
   languageName: unknown
   linkType: soft
+
+"openai@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "openai@npm:3.1.0"
+  dependencies:
+    axios: ^0.26.0
+    form-data: ^4.0.0
+  checksum: 2277d9e2b419b0ba17fb5ee7187bcff285a2a90120990c8da9658b8a8c8d4a927c95cec6cdc5503aa33108b4933288ef1f3756cc09033c33700d4bb2025138c0
+  languageName: node
+  linkType: hard
 
 "optionator@npm:^0.8.1":
   version: 0.8.3

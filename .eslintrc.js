@@ -23,7 +23,8 @@ module.exports = {
       'error',
       { groups: ['index', 'sibling', 'parent', 'internal', 'external', 'builtin', 'object', 'type'] },
     ],
-    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }], // ignore var start with _
+    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+    '@next/next/no-img-element': 'off',
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
