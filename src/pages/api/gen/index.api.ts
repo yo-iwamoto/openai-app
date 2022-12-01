@@ -12,8 +12,8 @@ const handler: NextApiHandler = async (req, res) => {
   const translatedText = await translateToEnglish(text);
 
   const { data } = await openai.createImage({
-    size: '512x512',
-    n: 3,
+    size: '256x256',
+    n: 2,
     prompt: translatedText,
   });
 
