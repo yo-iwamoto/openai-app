@@ -26,8 +26,20 @@ export default function Page() {
     [text]
   );
 
+  const [result, setResult] = useState('');
+
+  const completion = useCallback(async () => {
+    const res = await axios.post<{ data: any }>('/api/code', { text });
+    console.log(res.data.data);
+    setResult(res.data.data.choices[0].text);
+  }, [text]);
+
   return (
     <>
+      <p className='bg-gray-800 p-2'>
+        <code className='whitespace-pre font-mono text-white'>{result}</code>
+      </p>
+
       <div className='my-40 flex flex-col items-center gap-12 font-mono'>
         <form onSubmit={getData} className='flex flex-col items-center gap-12'>
           <textarea
@@ -47,6 +59,8 @@ export default function Page() {
             </span>
           </button>
         </form>
+
+        <button onClick={completion}>Completion</button>
 
         <ul className='flex flex-wrap items-center justify-center gap-8'>
           {urls.map((url) => (
